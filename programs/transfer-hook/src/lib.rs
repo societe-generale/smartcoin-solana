@@ -7,8 +7,7 @@ use spl_transfer_hook_interface::instruction::TransferHookInstruction;
 #[cfg(not(feature = "no-entrypoint"))]
 use  solana_security_txt::security_txt;
 
-const ADDRESS: [u8; 32] = five8_const::decode_32_const(env!("PROGRAM_ID"));
-declare_id!(Pubkey::new_from_array(ADDRESS));
+declare_id!("JCiN3FoAn68Mx4JaQ546viikunXujsPNvoDFYdKupboM");
 
 #[program]
 pub mod transfer_hook {
